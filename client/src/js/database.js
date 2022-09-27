@@ -49,7 +49,7 @@ export const putDb = async (content) =>
       const store = tx.objectStore('jate');
       const request = store.get(1);
       const result = await request;
-      console.log('result.value', result);
+      console.log('data received to the database', result);
       result;
   };
 
